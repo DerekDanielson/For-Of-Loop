@@ -1,19 +1,27 @@
-// Break
-/*for (let i = 0; i <= 20; i++){
-    if (i === 15){
-        console.log('Breaking...');
-        break;
-    }
+// Loop through arrays
+const items = ['book', 'table', 'chair', 'couch'];
+const users = [{name: 'Bob'}, {name: 'Steve'}, {name: 'Kate'}];
 
-    console.log(i);
+/*for (const item of items){
+    console.log(item);
 }*/
 
-// Continue
-for (let i = 0; i <= 20; i++){
-    if (i === 13){
-        console.log('Skipping 13');
-        continue;
-    }
-    
-    console.log(i);
+for (const user of users){
+    console.log(user.name);
+}
+
+// Loop over strings
+const str = 'Hello World';
+
+for (const letter of str){
+    console.log(letter);
+}
+
+// Loop over maps
+const map = new Map();
+map.set('name', 'John');
+map.set('age', 30);
+
+for (const [key, value] of map){
+    console.log(key, value);
 }
